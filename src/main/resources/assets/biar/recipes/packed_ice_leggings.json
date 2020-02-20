@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P P",
+    "P P"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "result": {
+    "item": "biar:packed_ice_leggings"
+  }
+}

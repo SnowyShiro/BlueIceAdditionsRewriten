@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B B",
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "bi:blue_ice_block"
+    }
+  },
+  "result": {
+    "item": "biar:blue_ice_chestplate"
+  }
+}

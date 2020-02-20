@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "B": {
+      "item": "bi:blue_ice_block"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "biar:blue_ice_hoe"
+  }
+}

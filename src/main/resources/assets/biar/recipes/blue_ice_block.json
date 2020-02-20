@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "biar:blue_ice_shard"
+    }
+  },
+  "result": {
+    "item": "bi:blue_ice_block"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "bi:blocks/blue_ice_block",
+    "top": "bi:blocks/blue_ice_block",
+    "side": "bi:blocks/blue_ice_block"
+  }
+}

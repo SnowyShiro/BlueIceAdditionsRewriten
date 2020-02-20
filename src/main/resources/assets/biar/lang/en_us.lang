@@ -1,0 +1,59 @@
+//Items
+item.ice_shard.name=Ice Shard
+item.packed_ice_shard.name=Packed Ice Shard
+item.blue_ice_shard.name=Blue Ice Shard
+
+//Slabs
+tile.ice_slab_half.name=Ice Slab
+tile.ice_slab_double.name=Double Ice Slab
+
+//Stairs
+tile.blue_ice_stairs.name=Blue Ice Stairs
+
+//Swords
+item.ice_sword.name=Ice Sword
+item.packed_ice_sword.name=Packed Ice Sword
+item.blue_ice_sword.name=Blue Ice Sword
+
+//Pickaxes
+item.ice_pickaxe.name=Ice Pickaxe
+item.packed_ice_pickaxe.name=Packed Ice Pickaxe
+item.blue_ice_pickaxe.name=Blue Ice Pickaxe
+
+//Axes
+item.ice_axe.name=Ice Axe
+item.packed_ice_axe.name=Packed Ice Axe
+item.blue_ice_axe.name=Blue Ice Axe
+
+//Shovels (Spades)
+item.ice_shovel.name=Ice Shovel
+item.packed_ice_shovel.name=Packed Ice Shovel
+item.blue_ice_shovel.name=Blue Ice Shovel
+
+//Hoes
+item.ice_hoe.name=Ice Hoe
+item.packed_ice_hoe.name=Packed Ice Hoe
+item.blue_ice_hoe.name=Blue Ice Hoe
+
+//Helmet
+item.ice_helmet.name=Ice Helmet
+item.packed_ice_helmet.name=Packed Ice Helmet
+item.blue_ice_helmet.name=Blue Ice Helmet
+
+//Chestplate
+item.ice_chestplate.name=Ice Chestplate
+item.packed_ice_chestplate.name=Packed Ice Chestplate
+item.blue_ice_chestplate.name=Blue Ice Chestplate
+
+//Leggings
+item.ice_leggings.name=Ice Leggings
+item.packed_ice_leggings.name=Packed Ice Leggings
+item.blue_ice_leggings.name=Blue Ice Leggings
+
+//Boots
+item.ice_boots.name=Ice Boots
+item.packed_ice_boots.name=Packed Ice Boots
+item.blue_ice_boots.name=Blue Ice Boots
+
+//Tabs
+itemGroup.Blue_Ice_Additions=Blue Ice Additions

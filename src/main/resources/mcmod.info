@@ -1,0 +1,12 @@
+[
+{
+  "modid": "biar",
+  "name": "BlueIceAdditions",
+  "description": "Adds Ice Tools, Armor, Shards Stairs and Slabs",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "authorList": ["SnowyShiro"],
+  "screenshots": [],
+  "dependencies": []
+}
+]
