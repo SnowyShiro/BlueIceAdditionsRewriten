@@ -2,11 +2,10 @@ package com.snowyshiro.blueiceadditions.objects.tools;
 
 import com.snowyshiro.blueiceadditions.Main;
 import com.snowyshiro.blueiceadditions.init.ItemInit;
-import com.snowyshiro.blueiceadditions.util.IHasModel;
 
 import net.minecraft.item.ItemSword;
 
-public class ToolSword extends ItemSword implements IHasModel
+public class ToolSword extends ItemSword
 {
 
     public ToolSword(String name, ToolMaterial material)
@@ -17,11 +16,5 @@ public class ToolSword extends ItemSword implements IHasModel
         setCreativeTab(Main.tabBlueIceAdditions);
 
         ItemInit.ITEMS.add(this);
-    }
-
-    @Override
-    public void registerModel()
-    {
-        Main.proxy.registerItemRenderer(this, 0, "inventory");
     }
 }

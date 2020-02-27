@@ -8,6 +8,8 @@ tile.ice_slab_half.name=Ice Slab
 tile.ice_slab_double.name=Double Ice Slab
 
 //Stairs
+tile.ice_stairs.name=Ice Stairs
+tile.packed_ice_stairs.name=Packed Ice Stairs
 tile.blue_ice_stairs.name=Blue Ice Stairs
 
 //Swords
