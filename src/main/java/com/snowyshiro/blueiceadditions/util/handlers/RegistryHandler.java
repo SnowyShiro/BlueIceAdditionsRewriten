@@ -9,9 +9,11 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 @Mod.EventBusSubscriber
-public class RegistryHandler extends BlockInit
+public class RegistryHandler
 {
     @SubscribeEvent
     public static void onItemRegister(RegistryEvent.Register<Item> event)
@@ -20,6 +22,7 @@ public class RegistryHandler extends BlockInit
     }
 
     @SubscribeEvent
+    @SideOnly(Side.CLIENT)
     public static void onModelRegister(ModelRegistryEvent event)
     {
         for(Item item : ItemInit.ITEMS)
@@ -38,5 +41,4 @@ public class RegistryHandler extends BlockInit
     {
         event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
     }
-
 }

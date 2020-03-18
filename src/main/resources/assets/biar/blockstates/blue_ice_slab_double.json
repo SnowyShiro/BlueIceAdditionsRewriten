@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "variant=default": { "model": "biar:blue_ice_slab_double" }
+  }
+}

@@ -6,6 +6,10 @@ item.blue_ice_shard.name=Blue Ice Shard
 //Slabs
 tile.ice_slab_half.name=Ice Slab
 tile.ice_slab_double.name=Double Ice Slab
+tile.packed_ice_slab_half.name=Packed Ice Slab
+tile.packed_ice_slab_double.name=Double Packed Ice Slab
+tile.blue_ice_slab_half.name=Blue Ice Slab
+tile.blue_ice_slab_double.name=Double Blue Ice Slab
 
 //Stairs
 tile.ice_stairs.name=Ice Stairs

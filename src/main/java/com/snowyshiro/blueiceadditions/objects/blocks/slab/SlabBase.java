@@ -2,32 +2,41 @@ package com.snowyshiro.blueiceadditions.objects.blocks.slab;
 
 import com.snowyshiro.blueiceadditions.Main;
 import com.snowyshiro.blueiceadditions.init.BlockInit;
+
+import java.util.Random;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSlab;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import java.util.Random;
-
 public abstract class SlabBase extends BlockSlab
 {
     Block half;
     public static final PropertyEnum<Variant> VARIANT = PropertyEnum.<Variant>create("variant", Variant.class);
 
-    public SlabBase(String name, Material material, BlockSlab half)
+    public SlabBase(String name, Material material, BlockSlab half, CreativeTabs tab, float hardness, float resistance, SoundType sound, String toolClass, int level, float slipperiness)
     {
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.tabBlueIceAdditions);
+        setHardness(hardness);
+        setResistance(resistance);
+        setSoundType(sound);
+        setHarvestLevel(toolClass, level);
+        setDefaultSlipperiness(slipperiness);
+
         this.useNeighborBrightness = !this.isDouble();
 
         IBlockState state = this.blockState.getBaseState().withProperty(VARIANT, Variant.DEFAULT);
@@ -37,7 +46,7 @@ public abstract class SlabBase extends BlockSlab
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int Fortune)
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
         return Item.getItemFromBlock(half);
     }
@@ -52,7 +61,7 @@ public abstract class SlabBase extends BlockSlab
     public IBlockState getStateFromMeta(int meta)
     {
         IBlockState state = this.blockState.getBaseState().withProperty(VARIANT, Variant.DEFAULT);
-        if(!this.isDouble() && state.getValue(HALF) == EnumBlockHalf.TOP) meta |= 8;
+        if(!this.isDouble()) state = state.withProperty(HALF, ((meta&8) != 0) ? EnumBlockHalf.TOP : EnumBlockHalf.BOTTOM);
         return state;
     }
 
@@ -60,7 +69,7 @@ public abstract class SlabBase extends BlockSlab
     public int getMetaFromState(IBlockState state)
     {
         int meta = 0;
-        if(!this.isDouble() && state.getValue(HALF) == EnumBlockHalf.TOP) meta |=8;
+        if(!this.isDouble() && state.getValue(HALF) == EnumBlockHalf.TOP) meta |= 8;
         return meta;
     }
 
@@ -68,7 +77,7 @@ public abstract class SlabBase extends BlockSlab
     protected BlockStateContainer createBlockState()
     {
         if(!this.isDouble()) return new BlockStateContainer(this, new IProperty[] {VARIANT, HALF});
-        else return new BlockStateContainer(this, new IProperty[]{VARIANT});
+        else return new BlockStateContainer(this, new IProperty[] {VARIANT});
     }
 
     @Override
